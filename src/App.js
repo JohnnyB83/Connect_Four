@@ -198,9 +198,9 @@ class App extends Component {
     return (
       <div className="App">
       <div className='gameInfo'>
-        <div>Connect Four!</div>
+        <div >Connect Four!</div>
         <button onClick={this.handleReset}>Reset Game</button>
-        {this.state.winStatus ? (this.state.currentPlayerBoolean ? <div>Black Wins</div> : <div>Red Wins</div>) : (this.state.currentPlayerBoolean ? <div>Red Turn</div> : <div>Black Turn</div>) }
+        {this.state.winStatus ? (this.state.currentPlayerBoolean ? <div><div className='circleTurn black'></div> Wins!</div> : <div><div className='circleTurn red'></div> Wins!</div>) : (this.state.currentPlayerBoolean ? <div>Turn: <div className='circleTurn red'></div></div> : <div>Turn: <div className='circleTurn black'></div></div>) }
       </div>
         <div className='row'>
           {this.state.boardStatus.map((column, index) => {
