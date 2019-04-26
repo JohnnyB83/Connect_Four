@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+.gameInfo {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
+  background-color: white;
+}
+
 .row {
   display: flex;
   flex-direction: row;

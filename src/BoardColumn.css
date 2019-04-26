@@ -2,6 +2,7 @@
 .boardColumn {
     margin-left: auto;
     margin-right: auto;
+    /* border: 1px solid gray; */
 }
 
 .boardColumn:hover {
@@ -9,10 +10,11 @@
 }
 
 .circle {
-    height: 100px;
-    width: 100px;
-    margin-bottom: 20px;
+    height: 75px;
+    width: 75px;
+    margin-bottom: 5px;
     border-radius: 50%;
+    padding: 15px;
 }
 
 .gray {

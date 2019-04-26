@@ -197,8 +197,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <button onClick={this.handleReset}>Reset</button>
-      {this.state.winStatus ? (this.state.currentPlayerBoolean ? <div>Black Wins</div> : <div>Red Wins</div>) : <div></div> }
+      <div className='gameInfo'>
+        <div>Connect Four!</div>
+        <button onClick={this.handleReset}>Reset Game</button>
+        {this.state.winStatus ? (this.state.currentPlayerBoolean ? <div>Black Wins</div> : <div>Red Wins</div>) : (this.state.currentPlayerBoolean ? <div>Red Turn</div> : <div>Black Turn</div>) }
+      </div>
         <div className='row'>
           {this.state.boardStatus.map((column, index) => {
             return (
