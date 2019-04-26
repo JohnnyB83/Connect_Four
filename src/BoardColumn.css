@@ -1,0 +1,28 @@
+
+.boardColumn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boardColumn:hover {
+    background-color: green;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.gray {
+    background-color: #bbb;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
